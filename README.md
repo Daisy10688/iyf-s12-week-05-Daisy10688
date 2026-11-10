@@ -51,3 +51,7 @@ iyf-s12-week-05-Daisy10688/
 ```
 ## Live Demo
 [view my to do list](https://daisy10688.github.io/iyf-s12-week-05-Daisy10688/)
+
+## Daily Challenges
+
+[View Daily Challenges](./daily-challenges/)
