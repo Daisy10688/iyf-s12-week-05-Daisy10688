@@ -38,9 +38,9 @@ iyf-s12-week-05-Daisy10688/
 │   ├── day-5-dark-mode-toggle.html
 │   └── README.md
 ├── dom-practice.html
-├── prac.js
+├── dom.js
 ├── index.html
-├── first.js
+├── app.js
 ├── styles.css
 ├── .gitignore
 └── README.md
