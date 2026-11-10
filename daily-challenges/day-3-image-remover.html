@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 3: Image Remover</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+    button { padding: 10px 14px; cursor: pointer; margin: 0 8px 16px 0; }
+    .images { display: flex; gap: 12px; flex-wrap: wrap; }
+    .images img { width: 180px; height: 130px; object-fit: cover; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Day 3: Image Remover</h1>
+  <p>Remove all images from the page, or use the bonus button to hide and show them.</p>
+  <button id="removeButton">Remove All Images</button>
+  <button id="toggleButton">Hide Images</button>
+
+  <div class="images" id="imageContainer">
+    <img src="https://picsum.photos/id/1015/360/260" alt="Mountain landscape">
+    <img src="https://picsum.photos/id/1025/360/260" alt="Dog portrait">
+    <img src="https://picsum.photos/id/1035/360/260" alt="Forest landscape">
+  </div>
+
+  <script>
+    const removeButton = document.querySelector("#removeButton");
+    const toggleButton = document.querySelector("#toggleButton");
+    const imageContainer = document.querySelector("#imageContainer");
+
+    removeButton.addEventListener("click", function () {
+      document.querySelectorAll("img").forEach(function (image) {
+        image.remove();
+      });
+    });
+
+    toggleButton.addEventListener("click", function () {
+      const images = document.querySelectorAll("#imageContainer img");
+      if (images.length === 0) return;
+
+      const currentlyHidden = images[0].hidden;
+      images.forEach(function (image) {
+        image.hidden = !currentlyHidden;
+      });
+      toggleButton.textContent = currentlyHidden ? "Hide Images" : "Show Images";
+    });
+  </script>
+</body>
+</html>

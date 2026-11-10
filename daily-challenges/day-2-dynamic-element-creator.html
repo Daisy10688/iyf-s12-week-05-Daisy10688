@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 2: Dynamic Element Creator</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+    button { padding: 8px 12px; cursor: pointer; margin-left: 8px; }
+    .challenge-item { margin: 12px 0; }
+  </style>
+</head>
+<body>
+  <h1>Day 2: Dynamic Element Creator</h1>
+  <p>Click the button to add a numbered paragraph. Each paragraph has its own delete button.</p>
+  <button id="addButton">Add Paragraph</button>
+  <div id="paragraphContainer"></div>
+
+  <script>
+    const addButton = document.querySelector("#addButton");
+    const paragraphContainer = document.querySelector("#paragraphContainer");
+    let paragraphCount = 0;
+
+    addButton.addEventListener("click", function () {
+      paragraphCount++;
+
+      const item = document.createElement("div");
+      item.classList.add("challenge-item");
+
+      const paragraph = document.createElement("p");
+      paragraph.textContent = `Paragraph ${paragraphCount}`;
+
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "Delete";
+      deleteButton.addEventListener("click", function () {
+        item.remove();
+      });
+
+      item.append(paragraph, deleteButton);
+      paragraphContainer.append(item);
+    });
+  </script>
+</body>
+</html>

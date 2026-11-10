@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 4: Content Copier</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+    .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .panel { border: 1px solid #bbb; border-radius: 8px; padding: 16px; min-height: 130px; }
+    button { padding: 10px 14px; margin-top: 16px; cursor: pointer; }
+    @media (max-width: 600px) { .panels { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <h1>Day 4: Content Copier</h1>
+  <p>Click the button to copy the content from the source div into the target div.</p>
+
+  <div class="panels">
+    <div class="panel" id="source">
+      <h2>Source</h2>
+      <p>This is the original content. The button will copy it to the target.</p>
+    </div>
+    <div class="panel" id="target">
+      <h2>Target</h2>
+      <p>Copied content will appear here.</p>
+    </div>
+  </div>
+
+  <button id="copyButton">Copy Content</button>
+
+  <script>
+    const source = document.querySelector("#source");
+    const target = document.querySelector("#target");
+    const copyButton = document.querySelector("#copyButton");
+
+    copyButton.addEventListener("click", function () {
+      target.innerHTML = source.innerHTML;
+    });
+  </script>
+</body>
+</html>
