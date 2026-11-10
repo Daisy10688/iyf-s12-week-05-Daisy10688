@@ -50,7 +50,7 @@ iyf-s12-week-05-Daisy10688/
 └── README.md
 ```
 ## Live Demo
-[view my to do list](https://daisy10688.github.io/iyf-s12-week-05-Daisy10688/)
+[view my to do list]( https://daisy10688.github.io/iyf-s12-week-05-Daisy10688/)
 
 ## Daily Challenges
 
