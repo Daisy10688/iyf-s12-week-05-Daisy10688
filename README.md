@@ -1,5 +1,9 @@
 # Week 5: DOM Manipulation
 
+## Author
+- **Name:** Daisy Awuor
+- **GitHub:** https://github.com/Daisy10688
+- **Date:** November,09th,2026
 ## Overview
 This week focuses on understanding the Document Object Model (DOM) and using JavaScript to make web pages interactive.
 
@@ -45,8 +49,5 @@ iyf-s12-week-05-Daisy10688/
 ├── .gitignore
 └── README.md
 ```
-
-## Author
-**Daisy Awuor**
-
-[GitHub Profile](https://github.com/Daisy10688)  
+## Live Demo
+[view my to do list](https://daisy10688.github.io/iyf--s12-week-05-Daisy10688/)
