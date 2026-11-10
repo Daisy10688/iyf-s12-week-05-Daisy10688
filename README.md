@@ -29,11 +29,20 @@ Built an interactive To-Do List using HTML, CSS and JavaScript.
 
 ## Repository Structure
 ```text
-├── index.html
-├── styles.css
-├── app.js
+iyf-s12-week-05-Daisy10688/
+├── daily-challenges/
+│   ├── day-1-color-changer.html
+│   ├── day-2-dynamic-element-creator.html
+│   ├── day-3-image-remover.html
+│   ├── day-4-content-copier.html
+│   ├── day-5-dark-mode-toggle.html
+│   └── README.md
 ├── dom-practice.html
-├── dom.js
+├── prac.js
+├── index.html
+├── first.js
+├── styles.css
+├── .gitignore
 └── README.md
 ```
 
